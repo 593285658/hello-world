@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function run1(){
+				alert("run1")
+			}
+			function run2(str){
+				alert(str)
+			}
+			function run3(obj){
+				alert(obj)
+			}
+		</script>
+		<!--事件句柄绑定-->
+		<input type="" name="" id="" value="" onclick="run1()"/>
+		<input type="" name="" id="" value="" onclick="run2('你好啊')"/>
+		<input type="" name="" id="" value="" onclick="run3(this)"/>
+		
+		<!--多个事件句柄绑定-->
+		<input type="" name="" id="" value="" onclick="run1(),run2('你好啊'),run3(this)"/>
+		
+		
+		<!--DOM绑定-->
+		<script type="text/javascript">
+			window.onload=run1;
+		</script>
+
+	</body>
+</html>

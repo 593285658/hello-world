@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			/*正则对象*/
+			
+			/*\s表示空格，*表示0-多个，+表示1-多个*/
+			/*直接量方式整个字符串满足才行，普通方式只要其中有满足字符串就行*/
+			var reg=/^\s*$/
+			var reg1=/\s*/
+			var flag=reg.test(" ")
+			//alert(flag)
+			
+			/*全局函数*/
+			
+			//eval（）
+			eval("var x=10")
+			//alert(x)
+			
+			//encodeURI,decodeURI
+			var msg="www.baidu.com张三"
+			var temp=encodeURI(msg)
+			//salert(temp)
+			temp=decodeURI(temp)
+			//alert(temp)
+			
+			//parseInt,parseFloat 字符串转为数字
+			var str="10.55"
+			temp=parseFloat(str)
+			//alert(temp)
+			
+			/*自定义函数*/
+			function test(){
+				
+			}
+						
+			/*自定义对象*/
+			function Person(){
+				this.name="小张";
+			}
+			var p=new Person();
+			//alert(p.name);
+			
+			/*BOM对象*/
+			function run1(){
+				alert("run1");
+			}
+			
+			//计时器
+			//var id=setInterval("run1()",2000);
+			//clearInterval(id)
+			//setTimeout()("run1()",2000)
+			
+			//location对象，返回当前url地址
+			var h=location.href;
+			
+			/*DOM对象*/
+			
+			
+			
+		</script>
+	</head>
+	<body>
+		<input type="" name="" id="t1" value="" />
+		<input type="checkbox" name="c1" id="" value="" />
+		<input type="checkbox" name="c1" id="" value="" />
+		<input type="checkbox" name="c1" id="" value="" />
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+		<input type="radio" name="" id="" value="" class="r1"/>
+		<input type="radio" name="" id="" value="" class="r1"/>
+		<script type="text/javascript">
+			var ip_text=document.getElementById("t1")
+			alert(ip_text)
+			var ip_checkbox=document.getElementsByName("c1")
+			alert(ip_checkbox)
+			var li=document.getElementsByTagName("li")
+			alert(li)
+			var rd=document.getElementsByTagName("r1")
+			alert(rd)
+		</script>
+	</body>
+</html>
